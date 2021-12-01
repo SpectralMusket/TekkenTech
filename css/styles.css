@@ -28,7 +28,7 @@ nav ul, nav ul li{
   margin:0 auto;
 }
 
-nav ul li a:visited{color:white}
+nav ul li a, nav ul li a:visited{color:white}
 nav ul li a:hover{color:orange}
 
 
