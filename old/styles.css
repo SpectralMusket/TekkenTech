@@ -1,0 +1,91 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  font-size:16px;
+}
+
+html{height:100%;}
+h1, h2, h3{margin: 0.2em auto;}
+
+.title{color:ghostwhite; text-align:left;}
+
+body{
+  box-sizing:border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: fixed url("../armorkingbg.jpg") #202020 right;
+  /* min-height: 100%; */
+}
+
+header {color:darkblue}
+ul, li{padding: 0; margin: 0.5em auto;list-style:none}
+
+nav{text-align: left;}
+nav ul, nav ul li{
+  color: ghostwhite;
+  display:inline;
+  list-style-type:none;
+  padding:0 1em 0 0;
+  margin:0 auto;
+}
+
+nav ul li a, nav ul li a:visited{color:white}
+nav ul li a:hover{color:orange}
+
+
+.wrapper{
+  box-sizing: border-box;
+  padding:0px;
+  margin:0 auto;
+  text-align: left;
+  min-height:100vh;
+  max-width:800px;
+  position: relative;
+}
+
+.centerBanner{
+  box-sizing: border-box;
+  padding:10px;
+  text-align: center;
+  /* max-width:100%; means max of parent element not viewport */
+  /* width:800px; */
+  height: auto;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+
+.centerMain{
+  box-sizing: border-box;
+  padding:10px;
+  background:white;
+  min-height: 100vh;
+  /* max-width:100%; */
+  /* width:800px; */
+  border: 2px solid black;
+}
+
+.centerMain img, .centerMain video{margin:auto; display: block;max-width: 100%;}
+
+footer{
+  padding:0 0 0 10px;
+  box-sizing: border-box;
+  display: block;
+  background:darkgray;
+  position:absolute;
+  width:100%;
+  bottom: 0;
+  border: 2px solid black;
+  border-top: none;
+  border-bottom: none;
+}
+footer p{margin: 0;}
+.fa-twitter{color:#00acee}
+
+/* .red{color:red}
+
+#text{
+  color:red;
+}
+
+@media screen and (min-width:1000px){
+  body{background: red;}
+} */
