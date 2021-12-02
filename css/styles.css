@@ -52,9 +52,9 @@ nav ul li{
 }
 
 nav ul li a, nav ul li a:visited{color:white}
-nav ul li a:hover{color:orange}
+nav ul li a:hover{color:orangered}
 
-a:hover{color:orange}
+a:hover{color:orangered}
 
 .mainWrapper{
   box-sizing: border-box;
@@ -71,24 +71,12 @@ a:hover{color:orange}
 }
 
 .TOC{
-  background:whitesmoke; border: 2px gray solid; flex: 0 0 200px;
+  background:whitesmoke;  flex: 0 0 200px;
+  border: 2px gray solid; border-top: 0; border-bottom: 0;
   padding:10px;
 }
-.main{
-  background: snow; flex: 1 1 800px;
-  padding:10px;
-}
-.main p, .main h1{margin:10px auto;}
-.main img, .main video {
-  margin:10px auto; display: block;max-width: 100%;
-}
 
-article{
-  padding-bottom:10px; margin-bottom:10px;
-  border-bottom:2px solid #1A1A1A;
-}
-
-.TOCLink{
+.TOC a{
   /* position: relative; */
   display: block;
   padding:5px;
@@ -96,21 +84,40 @@ article{
   border: 2px solid transparent;
   transition: all 0.2s;
 }
-.TOCLink:hover{
+.TOC a:hover{
   background:white;
   border: 2px solid gray;
   transition: all 0.2s;
 }
 
-/* li{padding:0; margin:0} */
 
+
+
+.main{
+  background: snow; flex: 1 1 800px;
+  padding:10px;
+  
+}
+.main p, .main h1{margin:10px auto;}
+.main img, .main video {
+  margin:10px auto; display: block; width: 600px; max-width: 100%;
+}
+
+article{
+  padding-bottom:10px; margin-bottom:10px;
+  border-bottom:2px solid #1A1A1A;
+}
+
+
+/* media queries for changing flex direction*/
 @media screen and (max-width:768px){
   .mainWrapper{
     flex-direction:column;
-    
   }
-  .TOC{flex:0 0 100px}
-  .main{flex:1 1 auto}
+    /* automatic sizing based on content, flex-grow is 0*/
+  .TOC{ flex:0 1 auto;   border: 2px solid gray; border-left: 0; border-right:0} 
+  .TOCempty{display:none} /* to remove the index sidebar  */
+  .main{flex:1 1 auto} /* can grow & shrink */
 } */
 
 
