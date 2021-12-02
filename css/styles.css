@@ -108,31 +108,20 @@ article{
   border-bottom:2px solid #1A1A1A;
 }
 
+.flexwrap{display:flex; flex-wrap:wrap }
 
 /* media queries for changing flex direction*/
 @media screen and (max-width:768px){
   .mainWrapper{
     flex-direction:column;
   }
+  
+  .flexwrap{flex-direction:column}
     /* automatic sizing based on content, flex-grow is 0*/
   .TOC{ flex:0 1 auto;   border: 2px solid gray; border-left: 0; border-right:0} 
   .TOCempty{display:none} /* to remove the index sidebar  */
   .main{flex:1 1 auto} /* can grow & shrink */
 } */
-
-
-
-.centerMain{
-  box-sizing: border-box;
-  padding:10px;
-  background:white;
-  min-height: 100vh;
-  /* max-width:100%; */
-  /* width:800px; */
-  border: 2px solid black;
-}
-
-.centerMain img, .centerMain video{margin:auto; display: block;max-width: 100%;}
 
 footer{
   padding:0 0 0 10px;
