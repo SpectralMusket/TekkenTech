@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryougi">
+  <meta name="description" content="Site for displaying my notes and tricks on Tekken and Dota">
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title>Tekken Tech</title>
+</head>
+
+
+
+<body>
+
+  <div class="wrapper">
+    <header class="centerBanner">
+      <%- include("partials/banner") %>
+      <p><%- 2+2+3 %></p>
+    </header>
+
+    <div class="mainWrapper">
+      <section class="TOC TOCempty"> <!-- TOCempty for media query to remove it when screen is small-->
+
+      </section>
+      
+      <main class="main">
+        <h2>Character Tech</h2>
+        <ul>
+          <li><a href="chartech-armorking.html">Armor King</a></li>
+          <li><a href="">Kunimitsu (to be done)</a></li>
+        </ul>
+        <h2>Matchup Quicktips</h2>
+        <ul>
+          <li><a href="quicktips-alisa.html">Alisa</a></li>
+          <li><a href="quicktips-hwoarang.html">Hwoarang</a></li>
+          <!-- <li><a href="quicktips-bryan.html">Bryan</a></li> -->
+        </ul>
+        
+        <h2><a href="beginners.html">Where to start for beginners?</a></h2>
+        
+        
+      </main>
+    </div>
+
+
+  </div>
+  
+  <!-- <script src="../scripts/autoload.js"></script> -->
+  
+</body>

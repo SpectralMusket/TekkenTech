@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ryougi">
+        <meta name="description" content="Site for displaying my notes and tricks on Tekken and Dota">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/styles.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <title>Search</title>
+
+    </head>
+
+
+
+    <body>
+
+        <div class="wrapper">
+            <header class="centerBanner"></header>
+
+            <div class="mainWrapper">
+                <section class="TOC">
+                </section>
+
+
+                <main class="main">
+
+                    <section id="mainTitle"><h1>Search</h1></section>
+
+                    <article id="searchInput">
+                        <form>
+                            <input type="search" required placeholder="Search..." name="search" autocomplete="off" autofocus>
+                            <input type="submit" value="Search">
+                        </form>
+                    </article>
+
+                    <article id="searchResults">
+
+                    </article>
+
+                </main>
+            </div>
+
+
+        </div>
+
+        <script>
+            $("#searchResults").append("<p>Test jquery</p>");
+        </script>
+        <script src="../scripts/autoload.js"></script>
+        <script src="../scripts.search.js"></script>
+
+    </body>
+
+</html>
