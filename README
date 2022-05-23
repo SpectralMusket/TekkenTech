@@ -1,1 +1,4 @@
 eleventy version
+
+TOC plugin generates table of contents based off headers & their ids.
+it generates an <aside> with class TOC & TOCempty

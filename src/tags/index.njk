@@ -1,0 +1,13 @@
+---
+title: List of tags
+layout: base
+---
+<h1>Tags</h1>
+
+<ol>
+
+{% for tag in collections.tagsList %}
+    <li><a href="/tags/{{tag}}">{{tag | capitalize}}</a></li>
+{% endfor %}
+
+</ol>

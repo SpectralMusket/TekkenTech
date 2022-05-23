@@ -1,8 +1,3 @@
----
-title: stuff
-eleventyComputed:
-  header: "{{title}} - Tekken Tech"
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +12,7 @@ eleventyComputed:
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
-  <title>{{ header }}</title>
+  <title>List of tags - Tekken Tech</title>
 </head>
 
 <body>
@@ -36,10 +31,20 @@ eleventyComputed:
 
     <div class="mainWrapper">
       
-        {{ content | toc | safe}}
+        
       
       <main class="main">
-        {{ content | safe}}
+        <h1>Tags</h1>
+
+<ol>
+
+
+    <li><a href="/tags/alisa">Alisa</a></li>
+
+    <li><a href="/tags/tekken">Tekken</a></li>
+
+
+</ol>
       </main>
     </div>
 

@@ -3,9 +3,33 @@ const pluginTOC = require("eleventy-plugin-toc");
 
 module.exports = function (config) {
     
-    // config.addPassthroughCopy({ './src/_includes/styles.css': 'styles.css' });
+    config.addPassthroughCopy({ './src/_includes/styles.css': 'styles.css' });
     config.addDataExtension("yaml", contents => yaml.load(contents));
-    config.addPlugin(pluginTOC);
+    config.addPlugin(pluginTOC, {
+        wrapper: "aside",
+        wrapperClass: "TOC TOCempty"
+    });
+    
+    config.addCollection("tagsList", function(collectionApi) {
+      const tagsSet = new Set();
+      collectionApi.getAll().map( item => {
+          if (item.data.tags) { // handle pages that don't have tags
+              item.data.tags.map( tag => tagsSet.add(tag))
+          }
+      });
+      return [...tagsSet].sort(); // can do (a,b) => a.localeCompare(b) as well 
+    });
+    
+    config.addCollection("charsList", function(collectionApi) {
+        const charsSet = new Set();
+        console.log("hellooo");
+        collectionApi.getAll().map(item => item.data.tags).filter(tagsArray => tagsArray != undefined)
+            .forEach(tagsArray => {
+              if (tagsArray[1] != undefined) charsSet.add(tagsArray[1])
+            });
+        return [...charsSet].sort(); // can do (a,b) => a.localeCompare(b) as well 
+    });
+    
     return {
       dir: {
         input: './src',

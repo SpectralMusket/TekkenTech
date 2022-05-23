@@ -1,2 +1,2 @@
-"tags": "tekken"
-"permalink": "/tekken/{{ title | slugify }}.html"
+tags: tekken
+# "permalink": "/tekken/{{ title | slugify }}.html"
