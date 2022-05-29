@@ -14,7 +14,7 @@ module.exports = function (config) {
     });
     
     config.setBrowserSyncConfig({
-      files: './build/css/**/*.css'
+      files: './docs/css/**/*.css'
     });
     
     config.addCollection("tagsList", function(collectionApi) {
@@ -40,7 +40,7 @@ module.exports = function (config) {
     return {
       dir: {
         input: './src',
-        output: './build'
+        output: './docs'
       }
     }
   }

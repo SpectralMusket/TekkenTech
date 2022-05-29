@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "watch:sass": "npx sass src/sass:build/css --watch",
+    "watch:sass": "npx sass src/sass:docs/css --watch",
     "start": "concurrently \"npm run watch:eleventy\" \"npm run watch:sass\""
   },
   "dependencies": {
