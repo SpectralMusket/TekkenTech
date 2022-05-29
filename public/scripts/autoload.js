@@ -1,1 +1,0 @@
-$(".centerBanner").load("../html_sections/__centerBanner.html");

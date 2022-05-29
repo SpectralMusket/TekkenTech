@@ -3,11 +3,18 @@ const pluginTOC = require("eleventy-plugin-toc");
 
 module.exports = function (config) {
     
-    config.addPassthroughCopy({ './src/_includes/styles.css': 'styles.css' });
+    // config.addPassthroughCopy("./src/css");
+    config.addPassthroughCopy("./src/img");
+    config.addPassthroughCopy("./src/scripts");
+    config.addPassthroughCopy("./src/videos");
     config.addDataExtension("yaml", contents => yaml.load(contents));
     config.addPlugin(pluginTOC, {
-        wrapper: "aside",
+        wrapper: "nav",
         wrapperClass: "TOC TOCempty"
+    });
+    
+    config.setBrowserSyncConfig({
+      files: './build/css/**/*.css'
     });
     
     config.addCollection("tagsList", function(collectionApi) {

@@ -1,0 +1,62 @@
+/* ---- Navbar Styling ---- */
+
+.mainNav{
+    display:flex;
+    background-color:darkmagenta;
+    padding: 6px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  ul{margin:0;padding:0}
+  li{list-style-type:none;}
+  nav ul li{
+    display:inline;
+    padding:0 0 0 10px;
+    margin:0 auto;
+  }
+  
+  a{color:royalblue}
+  a:hover{color:cornflowerblue} /* styles for all links */
+  a:active{color:orangered;}
+  nav ul li a, nav ul li a:visited{color:ghostwhite}
+  nav ul li a:hover{color:cornflowerblue}
+  nav ul li a:active{color:orangered}
+  
+  #searchDiv {
+    position: relative;
+    box-sizing: border-box;
+    flex: 0 1 300px;
+    margin: 0;
+    border: 2px red solid;
+  }
+  
+  .dropdown {
+    /* display: none; */
+    position: absolute;
+    box-sizing: border-box;
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    border: 2px red solid;
+  }
+  
+  .visible{display:block}
+  
+  #searchBar {
+    /* flex: 0 1 300px; */
+    width:100%;
+    box-sizing:border-box;
+    background-image: url("../img/icons8-search-24.png");
+    background-repeat:no-repeat;
+    background-size: 18px 18px;
+    background-position: 4px center;
+    margin:0 10px 0 0;
+    padding:6px 0px 6px 26px;
+    border:2px solid #ddd;
+  }
+  
+  .hide {
+    display: none;
+  }  

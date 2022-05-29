@@ -1,0 +1,16 @@
+---
+layout: base
+title: Article with TOC
+date: Last Modified
+eleventyComputed:
+  header: "{{title}} - Tekken Tech"
+---
+
+{{ content | toc | safe}}
+
+<main class="main">
+  {{ content | safe}}
+</main>
+
+{# load script to move TOC #}
+<script src="{{'/scripts/moveTOC.js' | url}}"></script>

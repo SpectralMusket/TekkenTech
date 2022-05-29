@@ -1,2 +1,9 @@
 tags: tekken
+layout: articleWithTOC
 # "permalink": "/tekken/{{ title | slugify }}.html"
+
+
+# we can use override:tags: in individual files to override instead of merge
+
+# For properties that can't be merged (like layout), this is not necessary 
+# and whatever value is inputted will override this folder-wide properties.

@@ -1,0 +1,15 @@
+## Details on layouts
+
+The foundation of the whole webpage layout is **base.njk**.
+It includes all the headers, footers, etc.
+The content is placed in the main wrapper.
+
+For now there are two types of main layouts that use **base.njk**,
+mainly **article.njk** and **articleWithTOC.njk**.
+
+Article inserts a <main> section into the base layout, while the TOC version adds a table of contents to its side. (Note that the *mainWrapper* class is CSS flexbox)
+
+
+## Grid layout
+
+Later on I intend to add a grid layout version of the base.
