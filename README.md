@@ -8,6 +8,10 @@ to generate index page, use
     indexTag: <tag to generate list of>
 
 
+### creating new articles
+Posts/articles should use the article or articleWithTOC layout.
+The contents should be taken as the contents of a <main> tag, and the <main> tag itself should not be included.
+The article should consist of <section> and <article> tags.
 
 
 ### package.json scripts:
