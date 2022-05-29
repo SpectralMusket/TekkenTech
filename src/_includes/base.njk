@@ -16,7 +16,7 @@ eleventyComputed:
   <link rel="shortcut icon" href="{{'/img/favicon.ico' | url }}" type="image/x-icon">
   <link rel="stylesheet" href="/css/styles.css">
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  {# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> #}
   
   <title>{{ header }}</title>
 </head>
@@ -28,8 +28,8 @@ eleventyComputed:
       <p class="title">Tekken Tech</p>
       <nav class="mainNav">
           <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/dota-index/">Dota</a></li>
+              <li><a href="{{'/index.html' | url }}">Home</a></li>
+              <li><a href="{{'/dota-index/' | url}}">Dota</a></li>
           </ul>
       </nav>
     </header>
