@@ -271,6 +271,11 @@ blockquote {
     flex-direction: column;
   }
 
+  #mainTitle {
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+  }
+
   .flexwrap {
     flex-direction: column;
   }
@@ -283,11 +288,11 @@ blockquote {
     border-right: 0;
   }
 
-  /* .TOCempty{display:block}  */
   .TOCempty {
     display: block;
   }
 
+  /* .TOCempty{display:block}  */
   /* TOCempty{display} is to remove the index sidebar  */
   /* if display block then it will be on top as a list */
   .main {

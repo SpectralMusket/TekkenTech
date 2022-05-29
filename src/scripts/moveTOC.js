@@ -17,5 +17,6 @@ function move(source, destination, elsePrepend) {
     }
 }
 
+move(toc, mainTitle, mainWrapper); // calls it first so it immediately changes upon loading
 window.addEventListener("resize", () => move(toc, mainTitle, mainWrapper));
 // document.addEventListener("scroll", () => console.log("scroll"));

@@ -115,7 +115,6 @@ body{
 
 
 #mainTitle { padding-top: 10px }
-
 #mainTitle, article{ /* creating spacing between articles, and lines between each article*/
   padding-bottom:10px; margin-bottom:10px;
   border-bottom:2px solid #1A1A1A;
@@ -124,7 +123,6 @@ body{
 article:last-child{ /* targets the last article in main and removes bottom line */
   border-bottom:0;
 }
-
 
 blockquote{ /* taken from obsidian style and modified */
   background: whitesmoke;
@@ -135,8 +133,6 @@ blockquote{ /* taken from obsidian style and modified */
   margin-inline-start: 30px;
   margin-inline-end: 30px;
 }
-
-
 
 .imgurDiv{text-align:center;}
 
@@ -149,11 +145,18 @@ blockquote{ /* taken from obsidian style and modified */
     flex-direction:column;
   }
   
-  .flexwrap{flex-direction:column}
+  #mainTitle{
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+  }
+  .flexwrap{flex-direction:column} // for the video
+
     /* automatic sizing based on content, flex-grow is 0*/
-  .TOC{ flex:0 1 auto;   border: 2px solid gray; border-left: 0; border-right:0} 
-  /* .TOCempty{display:block}  */
+  .TOC{ flex:0 1 auto; border: 2px solid gray; border-left: 0; border-right:0} 
+  
   .TOCempty{display:block}
+  
+  /* .TOCempty{display:block}  */
   /* TOCempty{display} is to remove the index sidebar  */
   /* if display block then it will be on top as a list */
   
