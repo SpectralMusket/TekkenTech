@@ -1,10 +1,12 @@
-/* ---- Navbar Styling ---- */
+/* ---- Navbar Styling ----  & also some ul li*/
 .mainNav {
   display: flex;
-  background-color: darkmagenta;
+  background-color: purple;
   padding: 6px 0;
   align-items: center;
   justify-content: space-between;
+  border: solid lightblue;
+  border-width: 0px 2px;
 }
 
 ul {
@@ -178,6 +180,10 @@ body {
   font-weight: bold;
 }
 
+.TOC:first-child {
+  padding-top: 20px;
+}
+
 .TOC a {
   /* position: relative; */
   display: block;
@@ -203,6 +209,7 @@ body {
 }
 
 .TOC ol ol {
+  /* for multiple level headers */
   padding: 0px 0px 0px 30px;
 }
 
@@ -221,7 +228,12 @@ body {
   max-width: 100%;
 }
 
+#mainTitle {
+  padding-top: 10px;
+}
+
 #mainTitle, article {
+  /* creating spacing between articles, and lines between each article*/
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px solid #1A1A1A;

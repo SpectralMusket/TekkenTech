@@ -1,11 +1,13 @@
-/* ---- Navbar Styling ---- */
+/* ---- Navbar Styling ----  & also some ul li*/
 
 .mainNav{
     display:flex;
-    background-color:darkmagenta;
+    background-color: purple;
     padding: 6px 0;
     align-items: center;
     justify-content: space-between;
+    border: solid lightblue;
+    border-width: 0px 2px;
   }
   
   ul{margin:0;padding:0}
